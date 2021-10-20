@@ -8,7 +8,7 @@ b *= 3 ;
 c *= 10;*/
 
 
-var a = 48;
+/*var a = 48;
 var b = 108;
 var c = 33;
 
@@ -18,4 +18,10 @@ b /= 4;
 c /= 11;
 
 var myStr; // Change this line
-myStr= 'FirstLine\n\t\\SecondLine\nThirdLine';
+myStr= 'FirstLine\n\t\\SecondLine\nThirdLine';*/
+
+// Only change code below this line
+var myName;
+var myStr;
+myName = 'Aleksandr';
+myStr = 'My name is '+myName+' and I am well!';
