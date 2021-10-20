@@ -26,9 +26,17 @@ var myStr;
 myName = 'Aleksandr';
 myStr = 'My name is '+myName+' and I am well!';*/
 
-// Change code below this line
+/*// Change code below this line
 
 var someAdjective;
 var myStr = "Learning to code is ";
 someAdjective = 'cool!';
-myStr += someAdjective;
+myStr += someAdjective;*/
+
+// Setup
+var lastNameLength = 0;
+var lastName = "Lovelace";
+
+// Only change code below this line
+
+lastNameLength = lastName.length;
