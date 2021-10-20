@@ -33,10 +33,20 @@ var myStr = "Learning to code is ";
 someAdjective = 'cool!';
 myStr += someAdjective;*/
 
-// Setup
+/*// Setup
 var lastNameLength = 0;
 var lastName = "Lovelace";
 
 // Only change code below this line
 
-lastNameLength = lastName.length;
+lastNameLength = lastName.length;*/
+
+
+//найти первый симол в строке
+// Setup
+var firstLetterOfLastName = "";
+var lastName = "Lovelace";
+
+// Only change code below this line
+firstLetterOfLastName = lastName[0]; // Change this line
+
