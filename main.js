@@ -42,11 +42,17 @@ var lastName = "Lovelace";
 lastNameLength = lastName.length;*/
 
 
-//найти первый симол в строке
+/*//найти первый симол в строке
 // Setup
 var firstLetterOfLastName = "";
 var lastName = "Lovelace";
 
 // Only change code below this line
-firstLetterOfLastName = lastName[0]; // Change this line
+firstLetterOfLastName = lastName[0]; // Change this line*/
 
+//поиск буквы в строке
+// Setup
+var lastName = "Lovelace";
+
+// Only change code below this line
+var thirdLetterOfLastName = lastName[2]; // Change this line
