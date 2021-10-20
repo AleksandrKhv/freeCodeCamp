@@ -16,3 +16,6 @@ var c = 33;
 a /= 12;
 b /= 4;
 c /= 11;
+
+var myStr; // Change this line
+myStr= 'FirstLine\n\t\\SecondLine\nThirdLine';
