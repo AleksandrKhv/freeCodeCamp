@@ -20,8 +20,15 @@ c /= 11;
 var myStr; // Change this line
 myStr= 'FirstLine\n\t\\SecondLine\nThirdLine';*/
 
-// Only change code below this line
+/*// Only change code below this line
 var myName;
 var myStr;
 myName = 'Aleksandr';
-myStr = 'My name is '+myName+' and I am well!';
+myStr = 'My name is '+myName+' and I am well!';*/
+
+// Change code below this line
+
+var someAdjective;
+var myStr = "Learning to code is ";
+someAdjective = 'cool!';
+myStr += someAdjective;
