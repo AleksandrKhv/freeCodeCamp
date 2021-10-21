@@ -57,9 +57,16 @@ var lastName = "Lovelace";
 // Only change code below this line
 var thirdLetterOfLastName = lastName[2]; // Change this line*/
 
+/*
 //удаление первого значения массива и добовление на его места нового
 // Setup
 var myArray = [["John", 23], ["dog", 3]];
 myArray.shift();
 myArray.unshift(["Paul",35]);
-// Only change code below this line
+// Only change code below this line*/
+
+//создание и вызов функции
+function reusableFunction () {
+    console.log ('Hi World')
+}
+reusableFunction()
