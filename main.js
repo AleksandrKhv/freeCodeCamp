@@ -73,6 +73,7 @@ function reusableFunction () {
 reusableFunction()*/
 
 
+/*
 //глобальный обьем и функции
 // Declare the myGlobal variable below this line
 var myGlobal = 10
@@ -93,4 +94,20 @@ function fun2() {
         output += " oopsGlobal: " + oopsGlobal;
     }
     console.log(output);
+}*/
+
+//локальные и глобальные переменные по приоритетам
+// Setup
+var outerWear = "T-Shirt";
+
+function myOutfit() {
+    var myOutfit = 'sweater'
+    return myOutfit
+
+
+
+    // Only change code above this line
+    return outerWear;
 }
+
+myOutfit();
