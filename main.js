@@ -65,8 +65,32 @@ myArray.shift();
 myArray.unshift(["Paul",35]);
 // Only change code below this line*/
 
+/*
 //создание и вызов функции
 function reusableFunction () {
     console.log ('Hi World')
 }
-reusableFunction()
+reusableFunction()*/
+
+
+//глобальный обьем и функции
+// Declare the myGlobal variable below this line
+var myGlobal = 10
+
+function fun1() {
+    oopsGlobal =5
+
+}
+
+// Only change code above this line
+
+function fun2() {
+    var output = "";
+    if (typeof myGlobal != "undefined") {
+        output += "myGlobal: " + myGlobal;
+    }
+    if (typeof oopsGlobal != "undefined") {
+        output += " oopsGlobal: " + oopsGlobal;
+    }
+    console.log(output);
+}
