@@ -334,6 +334,7 @@ testElse(4)*/
 }
 testElseIf(7);*/
 
+/*
 function orderMyLogic(val) {
     if (val < 5) {
         return "Less than 5";
@@ -343,4 +344,21 @@ function orderMyLogic(val) {
         return "Greater than or equal to 10";
     }
 }
-orderMyLogic(7);
+orderMyLogic(7);*/
+
+function testSize(num) {
+    if (num < 5) {
+        return 'Tiny'
+    } else if (num < 10) {
+        return 'Small'
+    } else if (num < 15) {
+        return 'Medium'
+    } else if (num < 20) {
+        return 'Large'
+    } else if (num >= 20) {
+        return 'Huge'
+    }
+    return 'Change Me';
+}
+
+testSize(7);
