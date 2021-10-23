@@ -167,8 +167,15 @@ console.log(nextInLine(testArr, 6));
 console.log("After: " + JSON.stringify(testArr));
 */
 
+/*
 function welcomeToBooleans() {
     if (5+5 === 10)
         return true;
 }
+*/
 
+function trueOrFalse(wasThatTrue) {
+    if (wasThatTrue) {
+        return 'Yes, that was true'
+    } return 'No, that was false'
+}
