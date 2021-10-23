@@ -119,7 +119,9 @@ setTimeout(upUser, 3000)
 function upUser () {
     alert('hi? wake up!')
 }*/
-setTimeout(wakeUp, 3000)
+
+
+/*setTimeout(wakeUp, 3000)
 
 function wakeUp() {
     let name = "Joe";
@@ -130,8 +132,9 @@ function wakeUp() {
     }
     document.write("Happy Birthday dear " + name + ",<br>");
     document.write("Happy Birthday to you.<br>");
-}
+}*/
 
+/*
 let word = "bottles";
 let count = 99;
 while (count > 0) {
@@ -145,5 +148,19 @@ while (count > 0) {
         console.log("No more " + word + " of beer on the wall.");
     }
 }
+*/
 
 
+
+
+function nextInLine(arr, item) {
+    arr.push(item)
+    let number = arr.shift()
+    return number;
+}
+
+let testArr = [1, 2, 3, 4, 5];
+
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
