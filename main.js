@@ -364,6 +364,7 @@ function testSize(num) {
 
 testSize(7);*/
 
+/*
 var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
 function golfScore(par, strokes) {
     if (strokes == 1) {
@@ -383,4 +384,25 @@ function golfScore(par, strokes) {
     }
     return "Change Me";
 }
-golfScore(5, 4);
+golfScore(5, 4);*/
+
+function caseInSwitch(val) {
+    var answer = "";
+    switch(val) {
+        case 1:
+            answer = 'alpha';
+            break;
+        case 2:
+            answer = 'beta';
+            break;
+        case 3:
+            answer = 'gamma';
+            break;
+        case 4:
+            answer = 'delta';
+            break;
+    }
+    return answer;
+}
+
+caseInSwitch(1);
