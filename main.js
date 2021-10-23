@@ -428,6 +428,7 @@ function switchOfStuff(val) {
 }
 switchOfStuff(1);*/
 
+/*
 function sequentialSizes(val) {
     var answer = "";
     switch(val) {
@@ -472,4 +473,9 @@ function chainToSwitch(val) {
     }
     return answer;
 }
-chainToSwitch(7);
+chainToSwitch(7);*/
+
+function isLess(a, b) {
+    return a < b;
+}
+isLess(10, 15);
