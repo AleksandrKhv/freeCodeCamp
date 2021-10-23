@@ -213,6 +213,7 @@ function compareEquality(a, b) {
 
 compareEquality(10, "10");*/
 
+/*
 // Setup
 function testNotEqual(val) {
     if (val != 99) { // Change this line
@@ -221,4 +222,14 @@ function testNotEqual(val) {
     return "Equal";
 }
 
-testNotEqual(10);
+testNotEqual(10);*/
+
+// Setup
+function testStrictNotEqual(val) {
+    if (val !== 17) { // Change this line
+        return "Not Equal";
+    }
+    return "Equal";
+}
+
+testStrictNotEqual(10);
