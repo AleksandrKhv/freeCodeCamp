@@ -181,6 +181,7 @@ function trueOrFalse(wasThatTrue) {
     } return 'No, that was false'
 }*/
 
+/*
 function testEqual(val) {
     if (val == 12) {
         return "Equal";
@@ -188,4 +189,14 @@ function testEqual(val) {
     return "Not Equal";
 }
 
-testEqual(10);
+testEqual(10);*/
+
+// Setup
+function testStrict(val) {
+    if (val === 7) { // Change this line
+        return "Equal";
+    }
+    return "Not Equal";
+}
+
+testStrict(10);
