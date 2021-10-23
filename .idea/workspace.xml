@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa75fa43-9378-4aa6-bf6f-7edb5ce38bb0" name="Default Changelist" comment="" />
+    <list default="true" id="aa75fa43-9378-4aa6-bf6f-7edb5ce38bb0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/battleship.js" beforeDir="false" afterPath="$PROJECT_DIR$/battleship.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1zlJUGAQirYhyzLYnek6m6Vb9u3" />
   <component name="ProjectViewState">
@@ -15,7 +21,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JS/itk8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -27,7 +33,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1634716755213</updated>
-      <workItem from="1634716756249" duration="13846000" />
+      <workItem from="1634716756249" duration="17863000" />
+      <workItem from="1634913010321" duration="626000" />
     </task>
     <servers />
   </component>

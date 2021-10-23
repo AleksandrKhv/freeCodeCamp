@@ -132,8 +132,8 @@ function wakeUp() {
     document.write("Happy Birthday to you.<br>");
 }
 
-var word = "bottles";
-var count = 99;
+let word = "bottles";
+let count = 99;
 while (count > 0) {
     console.log(count + " " + word + " of beer on the wall");
     console.log(count + " " + word + " of beer,");
@@ -145,3 +145,5 @@ while (count > 0) {
         console.log("No more " + word + " of beer on the wall.");
     }
 }
+
+
