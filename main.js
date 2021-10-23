@@ -280,6 +280,7 @@ function testLessThan(val) {
 testLessThan(10);*/
 
 
+/*
 function testLessOrEqual(val) {
     if (val <= 12) {  // Change this line
         return "Smaller Than or Equal to 12";
@@ -298,4 +299,12 @@ function testLogicalAnd(val) {
     return "No";
 }
 
-testLogicalAnd(10);
+testLogicalAnd(10);*/
+
+function testLogicalOr(val) {
+    if (val<10 || val>20) {
+        return "Outside";
+    }
+    return "Inside";
+}
+testLogicalOr(15);
