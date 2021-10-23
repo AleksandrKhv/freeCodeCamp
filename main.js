@@ -301,10 +301,23 @@ function testLogicalAnd(val) {
 
 testLogicalAnd(10);*/
 
+/*
 function testLogicalOr(val) {
     if (val<10 || val>20) {
         return "Outside";
     }
     return "Inside";
 }
-testLogicalOr(15);
+testLogicalOr(15);*/
+
+
+function testElse(val) {
+    var result = "";
+    if (val > 5) {
+        result = "Bigger than 5";
+    } else {
+        result = "5 or Smaller";
+    }
+    return result;
+}
+testElse(4)
