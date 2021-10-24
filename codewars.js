@@ -109,7 +109,7 @@ tickets([25, 25, 50]) // => YES
 tickets([25, 100]) // => NO. Vasya will not have enough money to give change to 100 dollars
 tickets([25, 25, 50, 50, 100]) // => NO. Vasya will not have the right bills to give 75 dollars of change (you can't make two bills of 25 from one of 50)*/
 
-function tickets(peopleInLine) {
+/*function tickets(peopleInLine) {
     let deposit = [0, 0, 0];
     function updateDeposit(paid) {
         for (let i = 0; i < deposit.length; i++) {
@@ -135,4 +135,24 @@ function tickets(peopleInLine) {
         }
     }
     return 'YES';
+}*/
+// ==========================================
+/*
+Detect Pangram
+
+A pangram is a sentence that contains every single letter of the alphabet at least once. For example, the sentence "The quick brown fox jumps over the lazy dog" is a pangram, because it uses the letters A-Z at least once (case is irrelevant).
+
+Given a string, detect whether or not it is a pangram. Return True if it is, False if not. Ignore numbers and punctuation.*/
+
+function isPangram(string){
+    let alpha = string.toUpperCase().split("");
+    for (let beta = 65; beta < 91; beta++) {
+        let gamma = String.fromCharCode(beta);
+        if (alpha.includes(gamma)) {
+            continue;
+        } else {
+            return false;
+        }
+    }
+    return true;
 }
