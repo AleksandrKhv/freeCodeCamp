@@ -490,6 +490,7 @@ function abTest(a, b) {
 abTest(2,2);*/
 
 
+/*
 var count = 0;
 
 function cc(card) {
@@ -519,4 +520,11 @@ function cc(card) {
     // Only change code above this line
 }
 
-cc(2); cc(3); cc(7); cc('K'); cc('A');
+cc(2); cc(3); cc(7); cc('K'); cc('A');*/
+
+let myDog = {
+    name: "Gav",
+    legs: 4,
+    tails : 2,
+    friends : [2,2,2,]
+}
