@@ -554,6 +554,7 @@ var testObj = {
 var entreeValue = testObj["an entree"];   // Change this line
 var drinkValue = testObj["the drink"];    // Change this line*/
 
+/*
 // Setup
 var testObj = {
     12: "Namath",
@@ -564,4 +565,14 @@ var testObj = {
 // Only change code below this line
 
 var playerNumber = 16 ;       // Change this line
-var player = testObj[playerNumber];   // Change this line
+var player = testObj[playerNumber];   // Change this line*/
+
+// Setup
+var myDog = {
+    "name": "Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+};
+
+myDog["name"]='Happy Coder'
