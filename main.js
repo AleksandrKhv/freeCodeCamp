@@ -522,9 +522,20 @@ function cc(card) {
 
 cc(2); cc(3); cc(7); cc('K'); cc('A');*/
 
+/*
 let myDog = {
     name: "Gav",
     legs: 4,
     tails : 2,
     friends : [2,2,2,]
-}
+}*/
+
+// Setup
+var testObj = {
+    "hat": "ballcap",
+    "shirt": "jersey",
+    "shoes": "cleats"
+};
+
+var hatValue = testObj.hat;      // Change this line
+var shirtValue = testObj.shirt;    // Change this line
