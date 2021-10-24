@@ -144,6 +144,7 @@ A pangram is a sentence that contains every single letter of the alphabet at lea
 
 Given a string, detect whether or not it is a pangram. Return True if it is, False if not. Ignore numbers and punctuation.*/
 
+/*
 function isPangram(string){
     let alpha = string.toUpperCase().split("");
     for (let beta = 65; beta < 91; beta++) {
@@ -155,4 +156,6 @@ function isPangram(string){
         }
     }
     return true;
-}
+}*/
+
+// ===========================================
