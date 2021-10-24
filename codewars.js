@@ -87,6 +87,7 @@ Examples:
 iqTest("1 2 1 1") => 2 // Second number is even, while the rest of the numbers are odd*/
 
 
+/*
 function iqTest(numbers){
     let initNumber = numbers.split(' ').map(val=>val*1)
     let eventNumber = initNumber.filter(val=>val%2===0)
@@ -94,4 +95,44 @@ function iqTest(numbers){
     return eventNumber.length > addNumber.length ?
         initNumber.indexOf(addNumber[0])+1 :
         initNumber.indexOf(eventNumber[0])+1
+}*/
+// --------------------------------------------------------
+/*Vasya - Clerk
+Vasya is currently working as a clerk. He wants to sell a ticket to every single person in this line.
+
+    Can Vasya sell a ticket to every person and give change if he initially has no money and sells the tickets strictly in the order people queue?
+
+    Return YES, if Vasya can sell a ticket to every person and give change with the bills he has at hand at that moment. Otherwise return NO.
+
+    Examples:
+tickets([25, 25, 50]) // => YES
+tickets([25, 100]) // => NO. Vasya will not have enough money to give change to 100 dollars
+tickets([25, 25, 50, 50, 100]) // => NO. Vasya will not have the right bills to give 75 dollars of change (you can't make two bills of 25 from one of 50)*/
+
+function tickets(peopleInLine) {
+    let deposit = [0, 0, 0];
+    function updateDeposit(paid) {
+        for (let i = 0; i < deposit.length; i++) {
+            deposit[i] = deposit[i] + paid[i];
+        }
+    }
+    for (let index in peopleInLine) {
+        if (peopleInLine[index] === 25) {
+            updateDeposit([1, 0, 0])
+        } else if (peopleInLine[index] === 50) {
+            updateDeposit([-1, 1, 0])
+        } else {// pay 100
+            if (deposit[0] >= 1 && deposit[1] >= 1) {
+                updateDeposit([-1, -1, 1]);
+            } else if (deposit[0] >= 3 && deposit[1] == 0) {
+                updateDeposit([-3, 0, 1]);
+            } else {
+                updateDeposit([-3, 0, 1]);
+            }
+        }
+        if (deposit[0] < 0 || deposit[1] < 0 || deposit[2] < 0) {
+            return 'NO';
+        }
+    }
+    return 'YES';
 }
