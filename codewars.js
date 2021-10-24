@@ -42,10 +42,34 @@ Complete the solution so that it splits the string into pairs of two characters.
 solution('abc') // should return ['ab', 'c_']
 solution('abcdef') // should return ['ab', 'cd', 'ef']*/
 
+/*
 function solution(str){
     if (str.length === 0) {
         return []
     };
 
     return (str.length % 2 ? str + '_' : str).match(/../g);
+}*/
+// ----------------------------------------------
+
+/*
+Write a function that takes a string of parentheses, and determines if the order of the parentheses is valid. The function should return true if the string is valid, and false if it's invalid.
+
+Examples
+"()"              =>  true
+")(()))"          =>  false
+"("               =>  false
+"(())((()())())"  =>  true
+Constraints
+0 <= input.length <= 100*/
+
+function validParentheses(parens){
+    var n = 0;
+    for (var i = 0; i < parens.length; i++) {
+        if (parens[i] == '(') n++;
+        if (parens[i] == ')') n--;
+        if (n < 0) return false;
+    }
+
+    return n == 0;
 }
