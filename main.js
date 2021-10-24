@@ -567,6 +567,7 @@ var testObj = {
 var playerNumber = 16 ;       // Change this line
 var player = testObj[playerNumber];   // Change this line*/
 
+/*
 // Setup
 var myDog = {
     "name": "Coder",
@@ -575,4 +576,15 @@ var myDog = {
     "friends": ["freeCodeCamp Campers"]
 };
 
-myDog["name"]='Happy Coder'
+myDog["name"]='Happy Coder'*/
+
+
+// Setup
+var myDog = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"],
+    "bark": "woof"
+};
+delete myDog.tails
