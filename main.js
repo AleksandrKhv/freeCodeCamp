@@ -591,6 +591,7 @@ var myDog = {
 delete myDog.tails*/
 
 
+/*
 // Setup
 function phoneticLookup(val) {
     var result = ""
@@ -607,4 +608,16 @@ function phoneticLookup(val) {
     // Only change code above this line
     return result;
 }
-phoneticLookup("charlie");
+phoneticLookup("charlie");*/
+
+
+function checkObj(obj, checkProp) {
+    // Only change code below this line
+    if (obj.hasOwnProperty(checkProp)) {
+        return obj[checkProp];
+    } else {
+        return "Not Found";
+    }
+    return "Change Me!";
+    // Only change code above this line
+}
