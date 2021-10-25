@@ -207,7 +207,96 @@ Notes:
     In Shell bash a1 and a2 are strings. The return is a string where words are separated by commas.
     Beware: r must be without duplicates.*/
 
+/*
 function inArray(array1,array2){
     let arrR = array2.join(" ")
     return array1.filter(item => arrR.search(item) !== -1 && item !== undefined ).sort()
+}*/
+// ========================================
+
+/*
+The Fibonacci numbers are the numbers in the following integer sequence (Fn):
+
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, ...
+
+such as
+
+F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+
+Given a number, say prod (for product), we search two Fibonacci numbers F(n) and F(n+1) verifying
+
+F(n) * F(n+1) = prod.
+
+    Your function productFib takes an integer (prod) and returns an array:
+
+    [F(n), F(n+1), true] or {F(n), F(n+1), 1} or (F(n), F(n+1), True)
+depending on the language if F(n) * F(n+1) = prod.
+
+    If you don't find two consecutive F(n) verifying F(n) * F(n+1) = prodyou will return
+
+    [F(n), F(n+1), false] or {F(n), F(n+1), 0} or (F(n), F(n+1), False)
+F(n) being the smallest one such as F(n) * F(n+1) > prod.
+
+    Some Examples of Return:
+    (depend on the language)
+
+productFib(714) # should return (21, 34, true),
+    # since F(8) = 21, F(9) = 34 and 714 = 21 * 34
+
+productFib(800) # should return (34, 55, false),
+    # since F(8) = 21, F(9) = 34, F(10) = 55 and 21 * 34 < 800 < 34 * 55
+-----
+    productFib(714) # should return [21, 34, true],
+    productFib(800) # should return [34, 55, false],
+    -----
+        productFib(714) # should return {21, 34, 1},
+    productFib(800) # should return {34, 55, 0},
+    -----
+        productFib(714) # should return {21, 34, true},
+    productFib(800) # should return {34, 55, false},
+    Note:
+You can see examples for your language in "Sample Tests".*/
+
+
+/*function productFib(prod){
+    const f = (n) => {
+        let phi = (1 + Math.sqrt(5)) / 2;
+        return Math.round(Math.pow(phi, n) / Math.sqrt(5))
+    }
+
+    for (let i = 0; i < Math.sqrt(prod)/2 ; i++) {
+        if (f(i) * f(i+1) === prod) return [f(i), f(i+1), true]
+        if (f(i) * f(i+1) < prod && f(i+1) * f(i+2) > prod) return [f(i+1), f(i+2), false]
+    }
+    return;
+}*/
+// ===================
+
+/*Write a function, persistence, that takes in a positive parameter num and returns its multiplicative persistence, which is the number of times you must multiply the digits in num until you reach a single digit.
+
+    For example:
+
+    persistence(39) === 3 // because 3*9 = 27, 2*7 = 14, 1*4=4
+                          // and 4 has only one digit
+
+persistence(999) === 4 // because 9*9*9 = 729, 7*2*9 = 126,
+                       // 1*2*6 = 12, and finally 1*2 = 2
+
+persistence(4) === 0 // because 4 is already a one-digit number*/
+
+function persistence(num) {
+    let Pi = 0;
+    let wer;
+
+    if(Number.isInteger(num) == true){
+
+        while(num >= 10){
+
+            wer = (num + "").split("");
+            num = wer.reduce((acc,val) => acc * val);
+            Pi+=1;
+
+        } return Pi
+
+    }
 }
