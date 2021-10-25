@@ -387,7 +387,7 @@ Ref:
 perimeter(5)  should return 80
 perimeter(7)  should return 216*/
 
-function perimeter(n) {
+/*function perimeter(n) {
     const arr = [1];
 
     for(let i = 0; i < n; i++) {
@@ -400,4 +400,6 @@ function perimeter(n) {
     }
 
     return arr.reduce((acc, n) => acc + n, 0) * 4;
-}
+}*/
+// ======================================
+
