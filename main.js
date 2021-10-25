@@ -611,6 +611,7 @@ function phoneticLookup(val) {
 phoneticLookup("charlie");*/
 
 
+/*
 function checkObj(obj, checkProp) {
     // Only change code below this line
     if (obj.hasOwnProperty(checkProp)) {
@@ -620,4 +621,4 @@ function checkObj(obj, checkProp) {
     }
     return "Change Me!";
     // Only change code above this line
-}
+}*/
