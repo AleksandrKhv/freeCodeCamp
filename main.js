@@ -714,6 +714,7 @@ glove boxсвойства gloveBoxContents. По возможности испо
 нотацию для всех свойств, в противном случае используйте скобку.*/
 
 
+/*
 var myStorage = {
     "car": {
         "inside": {
@@ -726,4 +727,57 @@ var myStorage = {
     }
 };
 
-var gloveBoxContents = myStorage.car.inside["glove box"];
+var gloveBoxContents = myStorage.car.inside["glove box"];*/
+
+// ======================================
+
+/*
+Доступ к вложенным массивам
+Как мы видели в предыдущих примерах, объекты могут содержать как вложенные объекты, так и вложенные массивы. Подобно доступу к вложенным объектам, скобки массива могут быть связаны для доступа к вложенным массивам.
+
+    Вот пример того, как получить доступ к вложенному массиву:
+
+    var ourPets = [
+        {
+            animalType: "cat",
+            names: [
+                "Meowzer",
+                "Fluffy",
+                "Kit-Cat"
+            ]
+        },
+        {
+            animalType: "dog",
+            names: [
+                "Spot",
+                "Bowser",
+                "Frankie"
+            ]
+        }
+    ];
+ourPets[0].names[1];
+ourPets[1].names[0];
+ourPets[0].names[1]будет строкой Fluffy, и ourPets[1].names[0]будет строкой Spot.
+
+    Используя точечную и квадратную нотацию, установите переменную secondTreeна второй элемент в treesсписке из myPlantsобъекта.*/
+
+var myPlants = [
+    {
+        type: "flowers",
+        list: [
+            "rose",
+            "tulip",
+            "dandelion"
+        ]
+    },
+    {
+        type: "trees",
+        list: [
+            "fir",
+            "pine",
+            "birch"
+        ]
+    }
+];
+
+var secondTree = myPlants[1].list[1];
