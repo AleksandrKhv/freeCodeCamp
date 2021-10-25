@@ -798,6 +798,7 @@ var secondTree = myPlants[1].list[1];*/
     Если valueэто пустая строка, удалите данное propсвойство из альбома.
     Примечание:recordCollection для тестов используется копия объекта.*/
 
+/*
 
 // Setup
 var recordCollection = {
@@ -839,4 +840,31 @@ function updateRecords(records, id, prop, value) {
     return records;
 }
 
-updateRecords(recordCollection, 5439, 'artist', 'ABBA');
+updateRecords(recordCollection, 5439, 'artist', 'ABBA');*/
+// ==============================
+
+/*
+Итерировать с помощью JavaScript в циклах while
+    Вы можете запускать один и тот же код несколько раз, используя цикл.
+
+    Первый тип цикла, который мы изучим, называется whileциклом, потому что он выполняется, пока заданное условие истинно, и останавливается, когда это условие перестает быть истинным.
+
+    var ourArray = [];
+var i = 0;
+while(i < 5) {
+    ourArray.push(i);
+    i++;
+}
+В приведенном выше примере кода whileцикл будет выполняться 5 раз и добавлять числа от 0 до 4 к ourArray.
+
+    Давайте попробуем заставить работать цикл while, помещая значения в массив.
+
+    Сложите числа от 5 до 0 (включительно) в порядке убывания, чтобы myArrayиспользовать whileцикл.*/
+
+// Setup
+let myArray = [];
+let i = 5;
+while(i >= 0) {
+    myArray.push(i);
+    i--;
+}
