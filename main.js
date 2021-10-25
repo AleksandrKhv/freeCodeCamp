@@ -661,6 +661,7 @@ function checkObj(obj, checkProp) {
 
     Добавьте в myMusicмассив новый альбом . Сложите artistи titleстроки, release_yearчисло и formatsмассив строк.*/
 
+/*
 var myMusic = [
     {
         "artist": "Billy Joel",
@@ -682,4 +683,47 @@ var myMusic = [
             "99"
         ]
     }
-];
+];*/
+
+// ====================================
+
+/*
+Доступ к вложенным объектам
+Доступ к подсвойствам объектов можно получить, объединив в цепочку обозначение точки или скобки.
+
+    Вот вложенный объект:
+
+    var ourStorage = {
+        "desk": {
+            "drawer": "stapler"
+        },
+        "cabinet": {
+            "top drawer": {
+                "folder1": "a file",
+                "folder2": "secrets"
+            },
+            "bottom drawer": "soda"
+        }
+    };
+ourStorage.cabinet["top drawer"].folder2;
+ourStorage.desk.drawer;
+ourStorage.cabinet["top drawer"].folder2будет строкой secrets, и ourStorage.desk.drawerбудет строкой stapler.
+
+    Получите доступ к myStorageобъекту и присвойте переменной содержимое
+glove boxсвойства gloveBoxContents. По возможности используйте точечную
+нотацию для всех свойств, в противном случае используйте скобку.*/
+
+
+var myStorage = {
+    "car": {
+        "inside": {
+            "glove box": "maps",
+            "passenger seat": "crumbs"
+        },
+        "outside": {
+            "trunk": "jack"
+        }
+    }
+};
+
+var gloveBoxContents = myStorage.car.inside["glove box"];
