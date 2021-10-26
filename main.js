@@ -861,10 +861,11 @@ while(i < 5) {
 
     Сложите числа от 5 до 0 (включительно) в порядке убывания, чтобы myArrayиспользовать whileцикл.*/
 
+/*
 // Setup
 let myArray = [];
 let i = 5;
 while(i >= 0) {
     myArray.push(i);
     i--;
-}
+}*/
