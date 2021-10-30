@@ -427,6 +427,7 @@ it may happen that the input string have leading, trailing whitespaces and more 
 For C: The result is freed.*/
 
 
+/*
 function orderWeight(strng) {
     var weighted = strng.split(" ")
         .map((sNum) => {
@@ -450,4 +451,14 @@ function orderWeight(strng) {
         })
         .map((item) => item[0])
         .join(" ");
+}*/
+// =====================================
+
+
+// Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
+
+function boolToWord( bool ){
+    if (bool === true) {
+        return 'Yes'
+    } return 'No'
 }
