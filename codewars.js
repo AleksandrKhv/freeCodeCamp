@@ -474,9 +474,22 @@ We need a function that can transform a number into a string.
     Examples:
     123 --> "123"
 999 --> "999"*/
+/*
 
 function numberToString(num) {
 
     return num = num.toString();
 
+}*/
+// ============================================
+
+Grasshopper - Summation
+
+let summation = function (num) {
+    let sum = 0;
+    for (let i = 0; i <= num; i++) {
+        sum += i
+    }
+    return sum;
 }
+
