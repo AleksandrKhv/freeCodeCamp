@@ -483,6 +483,7 @@ function numberToString(num) {
 }*/
 // ============================================
 
+/*
 Grasshopper - Summation
 
 let summation = function (num) {
@@ -492,4 +493,24 @@ let summation = function (num) {
     }
     return sum;
 }
+*/
 
+// =============================
+codewars - Double Char
+
+function doubleChar(str) {
+    return str.split("").map(function (a) {
+        return a + a;
+    }).join("");
+}
+
+//another option
+function doubleChar(str) {
+    var word = '';
+    for (var i = 0; i < str.length; i++){
+        word = word + str[i] + str[i];
+    }
+    return word;
+}
+
+doubleChar("apple");
