@@ -496,6 +496,7 @@ let summation = function (num) {
 */
 
 // =============================
+/*
 codewars - Double Char
 
 function doubleChar(str) {
@@ -513,4 +514,17 @@ function doubleChar(str) {
     return word;
 }
 
-doubleChar("apple");
+doubleChar("apple");*/
+
+// ========================================
+
+// Remove First and Last Character
+/*
+Это довольно просто. Ваша цель - создать функцию,
+    которая удаляет первый и последний символы строки.
+    Вам дается один параметр - исходная строка.
+    Вам не нужно беспокоиться о строках, содержащих менее двух символов.*/
+
+function removeChar(str){
+    return str.slice(1, -1)
+};
