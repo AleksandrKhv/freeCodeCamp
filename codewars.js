@@ -565,6 +565,13 @@ Example(Input --> Output)
 100 --> 198
 1298734 --> 2597466*/
 
+/*
 function nthEven(n){
     return n*2 -2
+}*/
+
+//A Needle in the Haystack
+
+function findNeedle(haystack) {
+    return "found the needle at position " + haystack.indexOf("needle");
 }
